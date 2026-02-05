@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Komischke - Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link active">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="experience.html" class="navbar-link">Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skills.html" class="navbar-link">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="certificates.html" class="navbar-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="language-toggle">
+                    <button class="language-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="language-btn" onclick="setLanguage('de')">DE</button>
+                </div>
+            </nav>
+
+            <!-- ABOUT -->
+            <article class="about active" data-page="about" id="about">
+                <section class="about-text">
+                    <p>
+                        Experienced Software Architect passionate about developing software in a team. With over 20 years of professional experience, I specialize in designing and implementing scalable, cloud-native solutions and leading development teams.
+                    </p>
+
+                    <p>
+                        My expertise spans full-stack development, software architecture, agile methodologies, and cloud technologies. I have contributed to significant projects including <a href="https://en.wikipedia.org/wiki/Wunderlist" target="_blank" class="content-link">Wunderlist</a> and <a href="https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app" target="_blank" class="content-link">Microsoft To Do</a>, where I played key technical roles, and the modernization of the <a href="https://www.quentic.de/" target="_blank" class="content-link">Quentic Platform</a>, where I guided architecture decisions and coached development teams. I'm deeply committed to delivering high-quality solutions and sharing knowledge with colleagues and the broader community.
+                    </p>
+
+                    <p>
+                        I hold certifications as a <a href="https://www.isaqb.org/de/" target="_blank" class="content-link">Certified Professional for Software Architecture from iSAQB</a>, as a <a href="https://www.cncf.io/training/certification/ckad/" target="_blank" class="content-link">Certified Kubernetes Application Developer from the Cloud Native Computing Foundation</a>, and from <a href="https://www.scrum.org/professional-scrum-certifications" target="_blank" class="content-link">Scrum.org</a>, 
+                    </p>
+                </section>
+            </article>
+
+            <footer>
+                <p>&copy; 2026 Martin Komischke. All rights reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="load-sidebar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

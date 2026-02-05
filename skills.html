@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Komischke - Kompetenzen & Zertifikate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <!-- SIDEBAR -->
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="experience.html" class="navbar-link">Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skills.html" class="navbar-link active">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="certificates.html" class="navbar-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="language-toggle">
+                    <button class="language-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="language-btn" onclick="setLanguage('de')">DE</button>
+                </div>
+            </nav>
+
+            <!-- COMPETENCIES -->
+            <article class="competencies active" data-page="skills">
+                <section class="skill">
+                    <div class="skills-controls">
+                        <button class="sort-btn active" data-sort="level" onclick="sortSkills('level')">Level</button>
+                        <button class="sort-btn" data-sort="alpha" onclick="sortSkills('alpha')">A-Z</button>
+                    </div>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item" data-level="95">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Fullstack Softwareengineering</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 95%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="90">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Webanwendungen</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="85">
+                            <div class="title-wrapper">
+                                <h5 class="h5">System Design</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="85">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Software Architecture</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="85">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Agile Methoden</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="80">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Anwendungsentwicklung mit .NET C#</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="75">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Anwendungsentwicklung mit Symfony PHP</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 75%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="70">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Agile Transformation</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="70">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Frontend Entwicklung mit React</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="70">
+                            <div class="title-wrapper">
+                                <h5 class="h5">TypeScript</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="70">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Containerisierung mit Docker</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="70">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Open-Source Contributions</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="60">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Domain Driven Design</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 60%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="55">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Container Orchestrierung mit Kubernetes</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 55%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item" data-level="30">
+                            <div class="title-wrapper">
+                                <h5 class="h5">KI gestützte Anwendungen</h5>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 30%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <footer>
+                <p>&copy; 2026 Martin Komischke. All rights reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="load-sidebar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

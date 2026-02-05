@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Komischke - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <main>
+        <!-- SIDEBAR -->
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="experience.html" class="navbar-link active">Experience</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="skills.html" class="navbar-link">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="certificates.html" class="navbar-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="language-toggle">
+                    <button class="language-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="language-btn" onclick="setLanguage('de')">DE</button>
+                </div>
+            </nav>
+
+            <!-- RESUME -->
+            <article class="resume active" data-page="experience">
+                <!-- EXPERIENCE -->
+                <section class="timeline">
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Softwarearchitekt · Quentic</h4>
+                            <span>Feb. 2019 - Jan. 2026 · Berlin</span>
+                            <p class="timeline-text">
+                                Agile Softwareentwicklung mit Fokus auf Modernisierung der <a href="https://www.quentic.de/" target="_blank" class="content-link">Quentic Platform</a> und Cloud-Native Architekturen. Verantwortlich für Architektur-Entscheidungen, Fullstack-Entwicklung, Implementierung von HSE & ESG-Features und Coaching mehrerer Entwicklerteams.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Senior Software Engineer · Microsoft</h4>
+                            <span>Juli 2015 - Apr. 2018 · Berlin</span>
+                            <p class="timeline-text">
+                                Entwicklung nativer Apps für <a href="https://en.wikipedia.org/wiki/Wunderlist" target="_blank" class="content-link">Wunderlist</a> und <a href="https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app" target="_blank" class="content-link">Microsoft To Do</a>. Verantwortlich für Implementierung von Produktfunktionalität und Optimierung der Anwendung hinsichtlich Performancekriterien.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Teamleiter Softwareentwicklung Windows · 6Wunderkinder</h4>
+                            <span>Apr. 2012 - Sept. 2014 · Berlin</span>
+                            <p class="timeline-text">
+                                Leitung des Entwicklerteams für <a href="https://en.wikipedia.org/wiki/Wunderlist" target="_blank" class="content-link">Wunderlist</a> Desktop und Windows Phone. Verantwortlich für Architektur und Implementierung von Features mit Fokus auf Performance und Benutzerfreundlichkeit.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Softwareingenieur · 6Wunderkinder</h4>
+                            <span>Okt. 2014 - Juni 2015 · Berlin</span>
+                            <p class="timeline-text">
+                                Entwicklung von <a href="https://en.wikipedia.org/wiki/Wunderlist" target="_blank" class="content-link">Wunderlist</a> für Windows und Windows Phone Plattformen mit modernen Softwareentwicklungsmethoden und Fokus auf Benutzerfreundlichkeit.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Softwareentwickler · Cortado AG</h4>
+                            <span>2005 - Apr. 2012 · Berlin</span>
+                            <p class="timeline-text">
+                                Entwicklung von Client-Server-Anwendungen mit objektorientierter Programmierung in C++, C# und .NET. Arbeit mit Windows und Linux Plattformen sowie Anwendung von Softwareentwicklungs-Best-Practices.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Softwareentwickler · Siemens AG</h4>
+                            <span>2004 - 2005 · Berlin</span>
+                            <p class="timeline-text">
+                                Firmware-Entwicklung für Embedded Systeme zur Automatisierung des Testens von Mobilfunkmodulen mit Fokus auf Zuverlässigkeit und Performance.
+                            </p>
+                        </li>
+                    </ol>
+
+                </section>
+
+            </article>
+
+            <footer>
+                <p>&copy; 2026 Martin Komischke. All rights reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="load-sidebar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
