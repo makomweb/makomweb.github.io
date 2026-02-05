@@ -4,39 +4,23 @@ A responsive personal portfolio website showcasing professional experience, skil
 
 **Live Site:** https://makomweb.github.io
 
-## Features
-
-- 📱 **Responsive Design** – Optimized for both mobile and desktop devices
-- 🌍 **Multi-language Support** – Available in English and German
-- 🎨 **Modern UI** – Clean, professional interface with smooth interactions
-- 📄 **Complete Portfolio** – About, experience, skills, and certificates sections
-
 ## Screenshots
 
 ![screenshots](./images/screenshots.png)
 
-## Technologies
+## Local Development
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Responsive Design
-- GitHub Pages
+To test the website locally, use Python's built-in HTTP server:
 
-## Project Structure
+```bash
+# Navigate to the repository directory
+cd <working-directory>
 
+# Start local server (Python 3)
+python3 -m http.server 8000
 ```
-├── index.html              # Main page
-├── about.html              # About section
-├── experience.html         # Work experience
-├── skills.html             # Technical skills
-├── certificates.html       # Certifications
-├── style.css               # Global styles
-├── script.js               # Main scripts
-├── load-sidebar.js         # Sidebar loader
-├── translations.js         # Language translations
-└── images/                 # Screenshots and assets
-```
+
+Then open your browser and visit: **http://localhost:8000**
 
 ## How to Contribute
 

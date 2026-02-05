@@ -1,7 +1,7 @@
 // Load sidebar from external file
 async function loadSidebar() {
     try {
-        const response = await fetch('./sidebar.html');
+        const response = await fetch('../components/sidebar.html');
         const sidebarHTML = await response.text();
         const mainElement = document.querySelector('main');
         
