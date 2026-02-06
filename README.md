@@ -4,9 +4,9 @@ A responsive personal portfolio website showcasing professional experience, skil
 
 **Live Site:** https://makomweb.github.io
 
-## Screenshots
+## Screenshot
 
-![screenshots](./images/screenshots.png)
+<p align="center"><img src="./images/screenshot.png" width="640" alt="screenshot"/></p>
 
 ## Local Development
 

@@ -101,8 +101,8 @@ function updateSkillsPage(lang) {
             }
         });
         
-        // Sort by level by default
-        sortSkills('level');
+        // Sort by A-Z by default
+        sortSkills('alpha');
     }
 }
 

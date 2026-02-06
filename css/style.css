@@ -27,7 +27,7 @@ main {
 
 /* SIDEBAR */
 .sidebar {
-    background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
+    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
     padding: 30px;
     color: white;
     position: relative;
@@ -50,12 +50,33 @@ main {
     justify-content: center;
     margin: 0 auto 15px;
     overflow: hidden;
+    position: relative;
+    padding: 4px; /* space for decorative border */
+    background-clip: padding-box;
+}
+
+/* subtle golden gradient border using pseudo-element */
+.avatar-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 2px; /* thickness of the border */
+    background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.1625), rgba(255,255,255,0) 25%),
+        linear-gradient(135deg, rgba(255,215,0,0.25) 0%, rgba(255,184,77,0.25) 40%, rgba(255,236,139,0.25) 70%, rgba(255,247,214,0.25) 100%);
+    box-shadow: 0 2px 8px rgba(255,200,50,0.03);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), black calc(100% - 6px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 8px), black calc(100% - 6px));
+    pointer-events: none;
 }
 
 .avatar-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .name {
@@ -218,8 +239,8 @@ address {
 
 .navbar-link.active,
 .navbar-link:hover {
-    color: #2d8659;
-    border-bottom-color: #2d8659;
+    color: #0f6b3a;
+    border-bottom-color: #0f6b3a;
 }
 
 .language-toggle {
@@ -248,7 +269,7 @@ address {
 
 .language-btn.active {
     color: #fff;
-    background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
+    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
     border-bottom: none;
 }
 
@@ -312,7 +333,7 @@ article.active {
 }
 
 .title-wrapper .icon-box {
-    background: #2d8659;
+    background: #0f6b3a;
     border-radius: 8px;
     width: 40px;
     height: 40px;
@@ -331,20 +352,22 @@ article.active {
 
 .timeline-list {
     list-style: none;
-    padding-left: 30px;
+    padding-left: 30px; /* align content with other page elements like navbar */
     position: relative;
 }
 
+/* vertical line centered relative to the bullets */
 .timeline-list::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 15px; /* center of the vertical line inside the left gutter */
     top: 0;
     bottom: 0;
     width: 2px;
     background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
 }
 
+/* each timeline item is normal flow; bullets are absolutely positioned into the gutter */
 .timeline-item {
     position: relative;
     padding-bottom: 15px;
@@ -356,16 +379,9 @@ article.active {
     padding-bottom: 0;
 }
 
+/* remove bullets: use a cleaner vertical line only */
 .timeline-item::before {
-    content: "";
-    position: absolute;
-    left: -36px;
-    top: 0;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border: 3px solid #2d8659;
-    border-radius: 50%;
+    content: none;
 }
 
 .timeline-item-title {
@@ -426,9 +442,9 @@ article.active {
 }
 
 .sort-btn.active {
-    background: #2d8659;
+    background: #0f6b3a;
     color: white;
-    border-color: #2d8659;
+    border-color: #0f6b3a;
 }
 
 .skills-list {
@@ -465,7 +481,7 @@ article.active {
 
 .skill-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #2d8659 0%, #52b788 100%);
+    background: linear-gradient(90deg, #0f6b3a 0%, #35b06a 100%);
     border-radius: 10px;
     transition: width 0.5s ease;
 }
@@ -523,7 +539,7 @@ article.active {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
+    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -547,10 +563,10 @@ article.active {
 
 /* CONTENT LINKS */
 .content-link {
-    color: #2d8659;
+    color: #0f6b3a;
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 1px solid rgba(102, 126, 234, 0.3);
+    border-bottom: 1px solid rgba(15, 107, 58, 0.3);
     transition: all 0.3s ease;
 }
 

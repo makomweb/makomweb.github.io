@@ -8,9 +8,9 @@ const translations = {
     },
     about: {
       title: "About",
-      p1: "Experienced Software Architect passionate about developing software in a team. With over 20 years of professional experience, I specialize in designing and implementing scalable, cloud-native solutions and leading development teams.",
-      p2: "My expertise spans full-stack development, software architecture, agile methodologies, and cloud technologies. I have contributed to significant projects including <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> and <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a>, where I played key technical roles, and the modernization of the <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a>, where I guided architecture decisions and coached development teams. I'm deeply committed to delivering high-quality solutions and sharing knowledge with colleagues and the broader community.",
-      p3: "I hold certifications as a <a href=\"https://www.isaqb.org/de/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture from iSAQB</a>, as a <a href=\"https://www.cncf.io/training/certification/ckad/\" target=\"_blank\" class=\"content-link\">Certified Kubernetes Application Developer from the Cloud Native Computing Foundation</a>, and from <a href=\"https://www.scrum.org/professional-scrum-certifications\" target=\"_blank\" class=\"content-link\">Scrum.org</a>,"
+      p1: "20+ years of experience: I design and build scalable, cloud-native solutions and lead development teams. I'm passionate about working in strong teams and creating high-performance architectures.",
+      p2: "I focus on full-stack development, software architecture, agile methods, and cloud technologies. At projects like <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> and <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a>, I took on key technical roles. Currently, I'm modernizing the <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a>, driving architecture decisions, and coaching developers. I'm committed to delivering high-quality solutions and sharing knowledge.",
+      p3: "Certifications: <a href=\"https://www.isaqb.org/de/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> (iSAQB), <a href=\"https://www.cncf.io/training/certification/ckad/\" target=\"_blank\" class=\"content-link\">Certified Kubernetes Application Developer</a> (Cloud Native Computing Foundation), and <a href=\"https://www.scrum.org/professional-scrum-certifications\" target=\"_blank\" class=\"content-link\">Scrum.org</a>"
     },
     experience: {
       title: "Experience",
@@ -18,32 +18,32 @@ const translations = {
         {
           title: "Software Architect · Quentic",
           period: "Feb. 2019 - Jan. 2026 · Berlin",
-          description: "Agile software development with focus on modernizing the <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a> and cloud-native architectures. Responsible for architecture decisions, full-stack development, implementation of HSE & ESG features, and coaching multiple development teams."
+          description: "Agile software development focused on modernizing the <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a> with cloud-native architectures. I drive architecture decisions, develop full-stack, build HSE & ESG features, and coach multiple development teams."
         },
         {
           title: "Senior Software Engineer · Microsoft",
           period: "July 2015 - Apr. 2018 · Berlin",
-          description: "Development of native apps for <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> and <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a>. Responsible for implementing product functionality and optimizing applications for performance criteria."
+          description: "Built native apps for <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> and <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a>. Implemented key product features and optimized apps for peak performance."
         },
         {
           title: "Software Engineer · 6Wunderkinder",
           period: "Oct. 2014 - June 2015 · Berlin",
-          description: "Development of <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> for Windows and Windows Phone platforms using modern software development methods with focus on user experience."
+          description: "Built <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> for Windows and Windows Phone using modern development practices. Focused on creating a seamless, user-friendly experience."
         },
         {
           title: "Team Lead Software Development Windows · 6Wunderkinder",
           period: "Apr. 2012 - Sept. 2014 · Berlin",
-          description: "Led the development team for <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> Desktop and Windows Phone. Responsible for architecture and implementation of features with focus on performance and usability."
+          description: "Led the development team for <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> Desktop and Windows Phone. Owned architecture decisions and feature development with emphasis on performance and usability."
         },
         {
           title: "Software Developer · Cortado AG",
           period: "2005 - Apr. 2012 · Berlin",
-          description: "Development of client-server applications using object-oriented programming in C++, C# and .NET. Working with Windows and Linux platforms while applying software development best practices."
+          description: "Built client-server applications with object-oriented programming in C++, C# and .NET. Worked across Windows and Linux platforms, applying best practices throughout."
         },
         {
           title: "Software Developer · Siemens AG",
           period: "2004 - 2005 · Berlin",
-          description: "Firmware development for embedded systems automating mobile module testing with focus on reliability and performance."
+          description: "Developed firmware for embedded systems automating mobile module testing. Prioritized reliability and high performance."
         }
       ]
     },
@@ -55,11 +55,10 @@ const translations = {
         "System Design",
         "Software Architecture",
         "Agile Methods",
-        "Application Development with .NET C#",
-        "Application Development with Symfony PHP",
+        "Application Development with .NET & C#",
+        "Application Development with Symfony & PHP",
         "Agile Transformation",
-        "Frontend Development with React",
-        "TypeScript",
+        "Frontend Development with React & TypeScript",
         "Containerization with Docker",
         "Open-Source Contributions",
         "Domain Driven Design",
@@ -104,9 +103,9 @@ const translations = {
     },
     about: {
       title: "Über mich",
-      p1: "Erfahrener Softwarearchitekt mit Leidenschaft für Softwareentwicklung im Team. Mit über 20 Jahren Berufserfahrung spezialisiere ich mich auf die Gestaltung und Implementierung skalierbarer, Cloud-nativer Lösungen und die Leitung von Entwicklungsteams.",
-      p2: "Meine Expertise erstreckt sich über Full-Stack-Entwicklung, Softwarearchitektur, agile Methoden und Cloud-Technologien. Ich habe an bedeutenden Projekten wie <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a> mitgewirkt, wo ich wichtige technische Rollen innehatte, sowie bei der Modernisierung der <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a>, wo ich Architekturentscheidungen geleitet habe und Entwicklungsteams gecoacht habe. Ich bin tief davon überzeugt, hochwertige Lösungen zu liefern und Wissen mit Kollegen und der breiteren Community zu teilen.",
-      p3: "Ich halte Zertifikate als <a href=\"https://www.isaqb.org/de/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture von der iSAQB</a>, als <a href=\"https://www.cncf.io/training/certification/ckad/\" target=\"_blank\" class=\"content-link\">Certified Kubernetes Application Developer von der Cloud Native Computing Foundation</a> und von <a href=\"https://www.scrum.org/professional-scrum-certifications\" target=\"_blank\" class=\"content-link\">Scrum.org</a>,"
+      p1: "20+ Jahre Erfahrung: Ich gestalte skalierbare, cloud-native Lösungen und leite Entwicklungsteams. Meine Leidenschaft liegt in der Zusammenarbeit im Team und der Gestaltung von High-Performance-Architekturen.",
+      p2: "Mein Fokus liegt auf Full-Stack-Entwicklung, Software-Architektur, agilen Methoden und Cloud-Technologien. Bei Projekten wie <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a> habe ich zentrale technische Aufgaben übernommen. Aktuell modernisiere ich die <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a>, leite Architekturentscheidungen und coache Developer. Es ist mir wichtig, qualitativ hochwertige Lösungen zu liefern und mein Wissen zu teilen.",
+      p3: "Zertifizierungen: <a href=\"https://www.isaqb.org/de/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> (iSAQB), <a href=\"https://www.cncf.io/training/certification/ckad/\" target=\"_blank\" class=\"content-link\">Certified Kubernetes Application Developer</a> (Cloud Native Computing Foundation) und <a href=\"https://www.scrum.org/professional-scrum-certifications\" target=\"_blank\" class=\"content-link\">Scrum.org</a>",
     },
     experience: {
       title: "Erfahrung",
@@ -114,32 +113,32 @@ const translations = {
         {
           title: "Softwarearchitekt · Quentic",
           period: "Feb. 2019 - Jan. 2026 · Berlin",
-          description: "Agile Softwareentwicklung mit Fokus auf Modernisierung der <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a> und Cloud-Native Architekturen. Verantwortlich für Architektur-Entscheidungen, Fullstack-Entwicklung, Implementierung von HSE & ESG-Features und Coaching mehrerer Entwicklerteams."
+          description: "Agile Softwareentwicklung mit Fokus auf die Modernisierung der <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a> und cloud-native Architekturen. Ich kümmere mich um Architekturentscheidungen, entwickle im Full-Stack, baue HSE & ESG-Features ein und unterstütze mehrere Entwicklungsteams."
         },
         {
           title: "Senior Software Engineer · Microsoft",
           period: "Juli 2015 - Apr. 2018 · Berlin",
-          description: "Entwicklung nativer Apps für <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a>. Verantwortlich für Implementierung von Produktfunktionalität und Optimierung der Anwendung hinsichtlich Performancekriterien."
+          description: "Ich habe native Apps für <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a> entwickelt. Meine Aufgaben waren die Umsetzung von Produktfeatures und die Optimierung der App für bessere Performance."
         },
         {
           title: "Softwareingenieur · 6Wunderkinder",
           period: "Okt. 2014 - Juni 2015 · Berlin",
-          description: "Entwicklung von <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> für Windows und Windows Phone Plattformen mit modernen Softwareentwicklungsmethoden und Fokus auf Benutzerfreundlichkeit."
+          description: "Ich habe <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> für Windows und Windows Phone entwickelt. Dabei habe ich moderne Softwareentwicklungsmethoden angewendet und viel Wert auf eine benutzerfreundliche Oberfläche gelegt."
         },
         {
           title: "Teamleiter Softwareentwicklung Windows · 6Wunderkinder",
           period: "Apr. 2012 - Sept. 2014 · Berlin",
-          description: "Leitung des Entwicklerteams für <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> Desktop und Windows Phone. Verantwortlich für Architektur und Implementierung von Features mit Fokus auf Performance und Benutzerfreundlichkeit."
+          description: "Ich habe das Entwicklerteam für <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> Desktop und Windows Phone geleitet. Dabei war ich für die Architektur zuständig und habe Features mit Fokus auf Performance und Benutzerfreundlichkeit entwickelt."
         },
         {
           title: "Softwareentwickler · Cortado AG",
           period: "2005 - Apr. 2012 · Berlin",
-          description: "Entwicklung von Client-Server-Anwendungen mit objektorientierter Programmierung in C++, C# und .NET. Arbeit mit Windows und Linux Plattformen sowie Anwendung von Softwareentwicklungs-Best-Practices."
+          description: "Ich habe Client-Server-Anwendungen entwickelt und dabei objektorientierte Programmierung in C++, C# und .NET eingesetzt. Ich bin mit Windows und Linux Plattformen vertraut und halte mich an bewährte Praktiken der Softwareentwicklung."
         },
         {
           title: "Softwareentwickler · Siemens AG",
           period: "2004 - 2005 · Berlin",
-          description: "Firmware-Entwicklung für Embedded Systeme zur Automatisierung des Testens von Mobilfunkmodulen mit Fokus auf Zuverlässigkeit und Performance."
+          description: "Ich habe Firmware für Embedded Systeme entwickelt, um das Testen von Mobilfunkmodulen zu automatisieren. Dabei war mir Zuverlässigkeit und gute Performance besonders wichtig."
         }
       ]
     },
@@ -151,11 +150,10 @@ const translations = {
         "System Design",
         "Software Architecture",
         "Agile Methoden",
-        "Anwendungsentwicklung mit .NET C#",
-        "Anwendungsentwicklung mit Symfony PHP",
+        "Anwendungsentwicklung mit .NET & C#",
+        "Anwendungsentwicklung mit Symfony & PHP",
         "Agile Transformation",
-        "Frontend Entwicklung mit React",
-        "TypeScript",
+        "Frontend Entwicklung mit React & TypeScript",
         "Containerisierung mit Docker",
         "Open-Source Contributions",
         "Domain Driven Design",
