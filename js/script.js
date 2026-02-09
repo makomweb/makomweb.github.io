@@ -58,14 +58,23 @@ function updatePageContent() {
 function updateAboutPage(lang) {
     const aboutText = document.querySelector('.about-text');
     const articleTitle = document.querySelector('.article-title');
-    
+
     if (articleTitle) articleTitle.textContent = getTranslation(lang, 'about.title');
-    
+
     if (aboutText) {
-        const paragraphs = aboutText.querySelectorAll('p');
-        if (paragraphs[0]) paragraphs[0].innerHTML = getTranslation(lang, 'about.p1');
-        if (paragraphs[1]) paragraphs[1].innerHTML = getTranslation(lang, 'about.p2');
-        if (paragraphs[2]) paragraphs[2].innerHTML = getTranslation(lang, 'about.p3');
+        const container = document.getElementById('about-paragraphs');
+        if (!container) return;
+        // clear existing
+        container.innerHTML = '';
+        const aboutObj = getTranslation(lang, 'about');
+        if (aboutObj && typeof aboutObj === 'object') {
+            const keys = Object.keys(aboutObj).filter(k => k.startsWith('p')).sort();
+            keys.forEach(k => {
+                const p = document.createElement('p');
+                p.innerHTML = aboutObj[k];
+                container.appendChild(p);
+            });
+        }
     }
 }
 
