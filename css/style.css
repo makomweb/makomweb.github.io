@@ -27,7 +27,7 @@ main {
 
 /* SIDEBAR */
 .sidebar {
-    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
+    background: linear-gradient(135deg, #0a7f7e 0%, #16b5ba 100%);
     padding: 30px;
     color: white;
     position: relative;
@@ -239,8 +239,8 @@ address {
 
 .navbar-link.active,
 .navbar-link:hover {
-    color: #0f6b3a;
-    border-bottom-color: #0f6b3a;
+    color: #0a7f7e;
+    border-bottom-color: #0a7f7e;
 }
 
 .language-toggle {
@@ -269,13 +269,13 @@ address {
 
 .language-btn.active {
     color: #fff;
-    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
+    background: linear-gradient(135deg, #0a7f7e 0%, #16b5ba 100%);
     border-bottom: none;
 }
 
 .language-btn:hover:not(.active) {
-    color: #2d8659;
-    background: rgba(45, 134, 89, 0.1);
+    color: #139a9b;
+    background: rgba(19, 154, 155, 0.1);
 }
 
 /* ABOUT */
@@ -333,7 +333,7 @@ article.active {
 }
 
 .title-wrapper .icon-box {
-    background: #0f6b3a;
+    background: #0a7f7e;
     border-radius: 8px;
     width: 40px;
     height: 40px;
@@ -364,7 +364,7 @@ article.active {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
+    background: linear-gradient(135deg, #139a9b 0%, #52d1d6 100%);
 }
 
 /* each timeline item is normal flow; bullets are absolutely positioned into the gutter */
@@ -393,7 +393,7 @@ article.active {
 
 .timeline-list > li > span {
     display: block;
-    color: #2d8659;
+    color: #139a9b;
     font-weight: 500;
     font-size: 0.9em;
     margin-bottom: 10px;
@@ -437,14 +437,14 @@ article.active {
 }
 
 .sort-btn:hover {
-    border-color: #2d8659;
-    color: #2d8659;
+    border-color: #139a9b;
+    color: #139a9b;
 }
 
 .sort-btn.active {
-    background: #0f6b3a;
+    background: #0a7f7e;
     color: white;
-    border-color: #0f6b3a;
+    border-color: #0a7f7e;
 }
 
 .skills-list {
@@ -481,7 +481,7 @@ article.active {
 
 .skill-progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #0f6b3a 0%, #35b06a 100%);
+    background: linear-gradient(90deg, #0a7f7e 0%, #16b5ba 100%);
     border-radius: 10px;
     transition: width 0.5s ease;
 }
@@ -525,8 +525,8 @@ article.active {
 }
 
 .certificate-item:hover {
-    border-color: #2d8659;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+    border-color: #139a9b;
+    box-shadow: 0 4px 12px rgba(19, 154, 155, 0.1);
 }
 
 .certificate-header {
@@ -539,7 +539,7 @@ article.active {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #0f6b3a 0%, #35b06a 100%);
+    background: linear-gradient(135deg, #0a7f7e 0%, #16b5ba 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -563,16 +563,16 @@ article.active {
 
 /* CONTENT LINKS */
 .content-link {
-    color: #0f6b3a;
+    color: #0a7f7e;
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 1px solid rgba(15, 107, 58, 0.3);
+    border-bottom: 1px solid rgba(10, 127, 126, 0.3);
     transition: all 0.3s ease;
 }
 
 .content-link:hover {
-    color: #52b788;
-    border-bottom-color: #52b788;
+    color: #52d1d6;
+    border-bottom-color: #52d1d6;
 }
 
 /* FOOTER */
@@ -646,7 +646,7 @@ footer {
 
     .navbar-link.active,
     .navbar-link:hover {
-        border-left-color: #2d8659;
+        border-left-color: #139a9b;
         border-bottom-color: transparent;
     }
 
@@ -671,7 +671,7 @@ footer {
 
     .language-btn.active {
         color: #fff;
-        background: linear-gradient(135deg, #2d8659 0%, #52b788 100%);
+        background: linear-gradient(135deg, #139a9b 0%, #52d1d6 100%);
         border-left-color: transparent;
     }
 
