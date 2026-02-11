@@ -41,7 +41,12 @@
     <main>
         <div class="main-content">
             <nav class="navbar">
-                <ul class="navbar-list">
+                <button class="hamburger-btn" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="navbar-list" id="navbarMenu">
                     <li class="navbar-item">
                         <a href="about.html" class="navbar-link">About</a>
                     </li>
@@ -151,5 +156,28 @@
     <script src="../js/translations.js"></script>
     <script src="../js/load-sidebar.js"></script>
     <script src="../js/script.js"></script>
+    <script>
+        // Hamburger menu toggle for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const navbarMenu = document.getElementById('navbarMenu');
+            
+            if (menuToggle && navbarMenu) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navbarMenu.classList.toggle('active');
+                });
+                
+                // Close menu when a link is clicked
+                const navLinks = navbarMenu.querySelectorAll('.navbar-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbarMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

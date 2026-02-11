@@ -254,6 +254,10 @@ address {
     align-items: center;
 }
 
+.hamburger-btn {
+    display: none;
+}
+
 .navbar-list {
     list-style: none;
     display: flex;
@@ -514,14 +518,18 @@ article.active {
 
 .skills-controls {
     display: flex;
-    gap: 8px;
+    gap: 0;
     margin-bottom: 20px;
-    font-size: 12px;
+    background: var(--bg-primary);
+    border-radius: 6px;
+    padding: 2px;
+    align-items: center;
+    width: fit-content;
 }
 
 .sort-btn {
     background: transparent;
-    border: 1px solid var(--border-color);
+    border: none;
     color: var(--text-tertiary);
     padding: 10px 14px;
     border-radius: 4px;
@@ -534,16 +542,15 @@ article.active {
     justify-content: center;
 }
 
-.sort-btn:hover {
-    border-color: var(--accent-secondary);
+.sort-btn:hover:not(.active) {
     color: var(--accent-secondary);
-    background: rgba(19, 154, 155, 0.05);
+    background: rgba(19, 154, 155, 0.1);
 }
 
 .sort-btn.active {
     background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
     color: white;
-    border-color: var(--accent-primary);
+    border: none;
 }
 
 .skills-list {
@@ -742,13 +749,82 @@ footer {
 }
 
 @media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
     .sidebar-info_more.active {
         max-height: 600px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 6px;
+        position: relative;
+    }
+
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        color: var(--text-tertiary);
+        order: -1;
+        min-width: 32px;
+        min-height: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-btn span {
+        width: 24px;
+        height: 2px;
+        background: var(--text-tertiary);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .hamburger-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
     }
 
     .navbar-list {
         flex-direction: column;
         gap: 0;
+        flex: 1 100%;
+        border-bottom: 2px solid var(--border-color);
+        margin-bottom: 10px;
+        padding-bottom: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar-list.active {
+        max-height: 300px;
+    }
+
+    .navbar > div {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: auto;
+        flex-shrink: 0;
     }
 
     .navbar-link {
@@ -775,12 +851,23 @@ footer {
         transition: background-color 0.3s ease;
     }
 
+    .language-toggle {
+        flex-direction: row;
+        gap: 0;
+        padding: 2px;
+        margin-left: 0;
+        margin-top: 0;
+        background: var(--bg-primary);
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+    }
+
     .theme-btn {
         font-size: 13px;
-        padding: 10px 14px;
+        padding: 8px 10px;
         border-radius: 4px;
-        min-width: 44px;
-        min-height: 36px;
+        min-width: 36px;
+        min-height: 32px;
     }
 
     .theme-btn.active {
@@ -788,26 +875,15 @@ footer {
         background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
     }
 
-    .language-toggle {
-        flex-direction: row;
-        gap: 0;
-        padding: 2px;
-        margin-left: 0;
-        margin-top: 15px;
-        background: var(--bg-primary);
-        border-radius: 6px;
-        transition: background-color 0.3s ease;
-    }
-
     .language-btn {
         font-size: 13px;
-        padding: 10px 14px;
+        padding: 8px 10px;
         border-radius: 4px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         border-left: none;
-        min-width: 44px;
-        min-height: 36px;
+        min-width: 36px;
+        min-height: 32px;
     }
 
     .language-btn.active {

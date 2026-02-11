@@ -1,11 +1,13 @@
 // Load sidebar from external file
 async function loadSidebar() {
     try {
-        const response = await fetch('../components/sidebar.html');
-        const sidebarHTML = await response.text();
         const mainElement = document.querySelector('main');
         
-        if (mainElement) {
+        // Prevent duplicate sidebar loading
+        if (mainElement && !mainElement.querySelector('.sidebar')) {
+            const response = await fetch('../components/sidebar.html');
+            const sidebarHTML = await response.text();
+            
             mainElement.insertAdjacentHTML('afterbegin', sidebarHTML);
             
             // Reinitialize ionicons after sidebar is loaded
