@@ -5,7 +5,12 @@ const THEME_DARK = 'dark';
 const THEME_AUTO = 'auto';
 
 function getCurrentTheme() {
-    return localStorage.getItem(THEME_KEY) || THEME_AUTO;
+    const stored = localStorage.getItem(THEME_KEY);
+    // If nothing stored, default to auto detection based on system
+    if (!stored) {
+        return THEME_AUTO;
+    }
+    return stored;
 }
 
 function getEffectiveTheme() {

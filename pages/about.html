@@ -99,26 +99,24 @@
     <script src="../js/load-sidebar.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        // Hamburger menu toggle for mobile
+        // Convert navbar to bottom tabs on mobile
         document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menuToggle');
             const navbarMenu = document.getElementById('navbarMenu');
+            const navLinks = document.querySelectorAll('.navbar-link');
             
-            if (menuToggle && navbarMenu) {
-                menuToggle.addEventListener('click', function() {
-                    menuToggle.classList.toggle('active');
-                    navbarMenu.classList.toggle('active');
-                });
-                
-                // Close menu when a link is clicked
-                const navLinks = navbarMenu.querySelectorAll('.navbar-link');
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        menuToggle.classList.remove('active');
-                        navbarMenu.classList.remove('active');
-                    });
-                });
+            // Add bottom-tabs class to navbar-list on mobile
+            if (window.innerWidth < 480) {
+                navbarMenu.classList.add('bottom-tabs');
             }
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth < 480) {
+                    navbarMenu.classList.add('bottom-tabs');
+                } else {
+                    navbarMenu.classList.remove('bottom-tabs');
+                }
+            });
         });
     </script>
 </body>

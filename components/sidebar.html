@@ -1,14 +1,43 @@
 <aside class="sidebar" data-sidebar>
     <div class="sidebar-info">
-        <figure class="avatar-box">
+        <!-- Mobile layout: avatar + info side-by-side on top row -->
+        <div class="sidebar-info-top-mobile">
+            <figure class="avatar-box">
+                <img src="../images/avatar.png" alt="Martin Komischke" width="80">
+            </figure>
+
+            <!-- Name and social buttons stacked vertically on right -->
+            <div class="sidebar-info-right">
+                <div class="info-content">
+                    <h1 class="name">Martin Komischke</h1>
+                </div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/makom/" target="_blank" class="social-link" title="LinkedIn">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/makomweb" target="_blank" class="social-link" title="GitHub">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desktop avatar (shown normally on desktop, hidden on mobile) -->
+        <figure class="avatar-box avatar-box-desktop">
             <img src="../images/avatar.png" alt="Martin Komischke" width="80">
         </figure>
 
-        <div class="info-content">
+        <!-- Desktop name and social (shown vertically on desktop, hidden on mobile) -->
+        <div class="info-content info-content-desktop">
             <h1 class="name">Martin Komischke</h1>
         </div>
 
-        <ul class="social-list">
+        <ul class="social-list social-list-desktop">
             <li class="social-item">
                 <a href="https://www.linkedin.com/in/makom/" target="_blank" class="social-link" title="LinkedIn">
                     <ion-icon name="logo-linkedin"></ion-icon>
@@ -20,5 +49,24 @@
                 </a>
             </li>
         </ul>
+
+        <!-- Mobile controls: bottom-right aligned -->
+        <div class="sidebar-controls-mobile">
+            <div class="theme-toggle">
+                <button class="theme-btn" data-theme="light" onclick="setTheme('light')" title="Light Theme">
+                    <ion-icon name="sunny"></ion-icon>
+                </button>
+                <button class="theme-btn" data-theme="dark" onclick="setTheme('dark')" title="Dark Theme">
+                    <ion-icon name="moon"></ion-icon>
+                </button>
+                <button class="theme-btn" data-theme="auto" onclick="setTheme('auto')" title="Auto Theme">
+                    <ion-icon name="desktop"></ion-icon>
+                </button>
+            </div>
+            <div class="language-toggle">
+                <button class="language-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="language-btn" onclick="setLanguage('de')">DE</button>
+            </div>
+        </div>
     </div>
 </aside>
