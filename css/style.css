@@ -67,12 +67,14 @@ main {
     display: flex;
     flex-direction: column;
     transition: background 0.3s ease;
+    align-items: stretch;
 }
 
 .sidebar-info {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .avatar-box {
@@ -779,7 +781,11 @@ footer {
     }
 
     .sidebar {
-        padding: 16px;
+        padding: 16px 14px 14px 14px;
+    }
+    
+    .sidebar-info {
+        margin-bottom: 0;
     }
 
     .sidebar-info_more.active {
@@ -803,9 +809,10 @@ footer {
     /* Mobile horizontal top row: avatar + name/social side-by-side */
     .sidebar-info-top-mobile {
         display: flex !important;
-        align-items: stretch;
+        align-items: center;
         gap: 12px;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
+        padding-bottom: 0;
     }
 
     .sidebar-info-top-mobile .avatar-box {
@@ -818,28 +825,35 @@ footer {
     /* Name + social buttons on right side */
     .sidebar-info-right {
         display: flex !important;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: center;
-        gap: 12px;
+        gap: 8px;
         flex: 1;
     }
 
     .sidebar-info-right .info-content {
         margin-bottom: 0;
-        text-align: center;
-        flex: 1;
+        text-align: left;
+        width: 100%;
     }
 
     .sidebar-info-right .info-content .name {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin: 0;
+        line-height: 1.2;
     }
 
     .sidebar-info-right .social-list {
         gap: 10px;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0;
+    }
+
+    .sidebar-info-right .social-link {
+        width: 36px;
+        height: 36px;
+        font-size: 1.25em;
     }
 
     /* Hide desktop avatar and content on mobile */
@@ -855,30 +869,54 @@ footer {
         display: none !important;
     }
 
-    /* Mobile controls: bottom-right aligned on same line */
+    /* Mobile controls: better aligned and spaced */
     .sidebar-controls-mobile {
         display: flex !important;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-        gap: 6px;
-        margin-top: 12px;
+        gap: 8px;
         padding-top: 12px;
-        border-top: 1px solid var(--border-color);
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .sidebar-controls-mobile .theme-toggle,
     .sidebar-controls-mobile .language-toggle {
         display: flex;
         flex-direction: row;
-        gap: 2px;
+        gap: 0;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        padding: 2px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .sidebar-controls-mobile .theme-btn,
     .sidebar-controls-mobile .language-btn {
-        font-size: 11px;
-        padding: 5px 7px;
-        min-width: 28px;
-        min-height: 24px;
+        font-size: 12px;
+        padding: 8px 11px;
+        min-width: 40px;
+        min-height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-controls-mobile .theme-btn:hover:not(.active),
+    .sidebar-controls-mobile .language-btn:hover:not(.active) {
+        color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    .sidebar-controls-mobile .theme-btn.active,
+    .sidebar-controls-mobile .language-btn.active {
+        color: #fff;
+        background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
+        box-shadow: 0 2px 6px rgba(26, 159, 176, 0.3);
     }
 
     .hamburger-btn {
@@ -920,12 +958,12 @@ footer {
         flex-direction: row;
         gap: 0;
         background: var(--bg-primary);
-        border-top: 1px solid var(--border-color);
+        border-top: 2px solid var(--border-color);
         border-bottom: none;
         padding: 0;
         margin: 0;
         z-index: 50;
-        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
     }
 
     .navbar-item {
@@ -934,25 +972,31 @@ footer {
     }
 
     .navbar-link {
-        display: block;
-        padding: 12px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 8px;
         border: none;
         border-bottom: 3px solid transparent;
         color: var(--text-tertiary);
         text-decoration: none;
-        font-weight: 500;
-        font-size: 12px;
+        font-weight: 600;
+        font-size: 14px;
         transition: all 0.3s ease;
+        min-height: 60px;
+        gap: 2px;
     }
 
     .navbar-link:hover {
         color: var(--accent-primary);
-        border-bottom-color: var(--accent-primary);
+        background: rgba(26, 159, 176, 0.05);
     }
 
     .navbar-link.active {
         color: var(--accent-primary);
         border-bottom-color: var(--accent-primary);
+        background: rgba(26, 159, 176, 0.08);
     }
 
     .navbar > div {
@@ -962,19 +1006,6 @@ footer {
         width: auto;
         flex-shrink: 0;
         /* Hide buttons on mobile, show on desktop */
-    }
-
-    .navbar-link {
-        padding: 15px 0;
-        border-bottom: none;
-        border-left: 3px solid transparent;
-        padding-left: 10px;
-    }
-
-    .navbar-link.active,
-    .navbar-link:hover {
-        border-left-color: #139a9b;
-        border-bottom-color: transparent;
     }
 
     .theme-toggle {

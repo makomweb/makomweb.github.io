@@ -6,10 +6,12 @@ A responsive personal portfolio website showcasing professional experience, skil
 
 ## Screenshot
 
-<p align="center">
-  <img src="./images/desktop.png" width="640" alt="desktop" style="vertical-align: top;" />
-  <img src="./images/mobile.png" width="320" alt="mobile" style="vertical-align: top;" />
-</p>
+<table>
+  <tr>
+    <td><img src="./images/desktop.png" alt="Desktop view" width="640"></td>
+    <td><img src="./images/mobile.png" alt="Mobile view" width="320"></td>
+  </tr>
+</table>
 
 
 ## Local Development

@@ -10,7 +10,8 @@ function updateLanguageButtons(lang) {
     const buttons = document.querySelectorAll('.language-btn');
     buttons.forEach(btn => {
         btn.classList.remove('active');
-        if ((lang === 'en' && btn.textContent === 'EN') || (lang === 'de' && btn.textContent === 'DE')) {
+        const btnText = btn.textContent.trim().toUpperCase();
+        if ((lang === 'en' && btnText === 'EN') || (lang === 'de' && btnText === 'DE')) {
             btn.classList.add('active');
         }
     });

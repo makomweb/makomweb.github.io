@@ -14,6 +14,16 @@ async function loadSidebar() {
             if (window.Ionicons) {
                 window.Ionicons.build();
             }
+            
+            // Update language buttons after sidebar loads
+            if (typeof updateLanguageButtons === 'function' && typeof getCurrentLanguage === 'function') {
+                updateLanguageButtons(getCurrentLanguage());
+            }
+            
+            // Update theme buttons after sidebar loads
+            if (typeof updateThemeButtons === 'function' && typeof getCurrentTheme === 'function') {
+                updateThemeButtons(getCurrentTheme());
+            }
         }
     } catch (error) {
         console.error('Error loading sidebar:', error);
