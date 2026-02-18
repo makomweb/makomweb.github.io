@@ -23,10 +23,10 @@ To test the website locally, use Python's built-in HTTP server:
 cd <working-directory>
 
 # Start local server (Python 3)
-python3 -m http.server 8000
+python3 -m http.server 8035
 ```
 
-Then open your browser and visit: **http://localhost:8000**
+Then open your browser and visit: **http://localhost:8035**
 
 ## How to Contribute
 
