@@ -17,7 +17,7 @@ const translations = {
       jobs: [
         {
           title: "Education",
-          period: "Mar. 2019 - now · Berlin",
+          period: "Feb. 2026 - now · Berlin",
           description: "Continuing education in software architecture: <a href=\"https://www.isaqb.org/de/zertifizierungen/pruefungen/cpsa-advanced-level-pruefungen/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> from iSAQB, and a 4 month training for <a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect Professional</a> certification. Focused on deepening expertise in enterprise architectures and design of scalable cloud-native solutions."
         },
         {
@@ -121,7 +121,7 @@ const translations = {
       jobs: [
         {
           title: "Weiterbildung",
-          period: "März 2019 - heute · Berlin",
+          period: "Feb. 2026 - heute · Berlin",
           description: "Weiterbildung im Bereich Softwarearchitektur: <a href=\"https://www.isaqb.org/de/zertifizierungen/pruefungen/cpsa-advanced-level-pruefungen/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> von der iSAQB; sowie 4 Monate intensive Fortbildung zum <a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect Professional</a>. Vertiefung von Expertise in Enterprise-Architekturen, Entwurf von skalierbaren cloud-native Lösungen."
         },
         {
