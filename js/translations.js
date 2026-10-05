@@ -16,6 +16,11 @@ const translations = {
       title: "Experience",
       jobs: [
         {
+          title: "Education",
+          period: "Mar. 2019 - now · Berlin",
+          description: "Continuing education in software architecture: <a href=\"https://www.isaqb.org/de/zertifizierungen/pruefungen/cpsa-advanced-level-pruefungen/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> from iSAQB, and a 4 month training for <a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect Professional</a> certification. Focused on deepening expertise in enterprise architectures and design of scalable cloud-native solutions."
+        },
+        {
           title: "Software Architect · Quentic",
           period: "Feb. 2019 - Jan. 2026 · Berlin",
           description: "Agile software development focused on modernizing the <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic Platform</a> with cloud-native architectures. I drive architecture decisions, develop full-stack, build HSE & ESG features, and coach multiple development teams."
@@ -70,6 +75,10 @@ const translations = {
       title: "Certificates",
       items: [
         {
+          name: "<a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect</a>",
+          issuer: "Professional Level · Amazon Web Services Training and Certification"
+        },
+        {
           name: "<a href=\"https://www.isaqb.org/de/zertifizierungen/zertifizierungen-uebersicht/cpsa-foundation-level/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a>",
           issuer: "Foundation Level · iSAQB"
         },
@@ -110,6 +119,11 @@ const translations = {
     experience: {
       title: "Erfahrung",
       jobs: [
+        {
+          title: "Weiterbildung",
+          period: "März 2019 - heute · Berlin",
+          description: "Weiterbildung im Bereich Softwarearchitektur: <a href=\"https://www.isaqb.org/de/zertifizierungen/pruefungen/cpsa-advanced-level-pruefungen/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a> von der iSAQB; sowie 4 Monate intensive Fortbildung zum <a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect Professional</a>. Vertiefung von Expertise in Enterprise-Architekturen, Entwurf von skalierbaren cloud-native Lösungen."
+        },
         {
           title: "Softwarearchitekt · Quentic",
           period: "Feb. 2019 - Jan. 2026 · Berlin",
@@ -164,6 +178,10 @@ const translations = {
     certificates: {
       title: "Zertifikate",
       items: [
+        {
+          name: "<a href=\"https://aws.amazon.com/de/certification/certified-solutions-architect-professional/\" target=\"_blank\" class=\"content-link\">AWS Solutions Architect</a>",
+          issuer: "Professional Level · Amazon Web Services Training and Certification"
+        },
         {
           name: "<a href=\"https://www.isaqb.org/de/zertifizierungen/zertifizierungen-uebersicht/cpsa-foundation-level/\" target=\"_blank\" class=\"content-link\">Certified Professional for Software Architecture</a>",
           issuer: "Foundation Level · iSAQB"
