@@ -68,7 +68,7 @@ const translations = {
         "Open-Source Contributions",
         "Domain Driven Design",
         "Container Orchestration with Kubernetes",
-        "AI-powered Applications"
+        "Agentic/AI-powered Applications"
       ]
     },
     certificates: {
@@ -113,7 +113,7 @@ const translations = {
     about: {
       title: "Über mich",
       p1: "20+ Jahre Erfahrung: Ich gestalte skalierbare, cloud-native Lösungen und leite Entwicklungsteams. Meine Leidenschaft liegt in der Zusammenarbeit im Team und der Gestaltung von High-Performance-Architekturen. Dabei übernehme ich gerne Verantwortung und habe fundierte Führungskompetenzen entwickelt.",
-      p2: "Mein Fokus liegt auf Full-Stack-Entwicklung, Software-Architektur, agilen Methoden und Cloud-Technologien. Meine Stärken sind analytisches Denken und lösungsorientiertes Handeln. Die Zusammenarbeit im Team schätze ich sehr und bringe hohe soziale Kompetenz mit — ich verstehe Kollegen und Kunden empathisch und kann mich gleichzeitig durchsetzen, wenn es erforderlich ist. Bei Projekten wie <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a> habe ich zentrale technische Aufgaben übernommen. Bei <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic</a> habe ich die Platform mit cloud-native Architekturen modernisiert, Architekturentscheidungen getrieben und Entwicklungsteams gecoacht. Es ist mir wichtig, qualitativ hochwertige Lösungen zu liefern und mein Wissen zu teilen.",      
+      p2: "Mein Fokus liegt auf Full-Stack-Entwicklung, Software-Architektur, agilen Methoden und Cloud-Technologien. Meine Stärken sind analytisches Denken und lösungsorientiertes Handeln. Die Zusammenarbeit im Team schätze ich sehr und bringe hohe soziale Kompetenz mit — ich verstehe Kollegen und Kunden empathisch und kann mich gleichzeitig durchsetzen, wenn es erforderlich ist. Bei Projekten wie <a href=\"https://en.wikipedia.org/wiki/Wunderlist\" target=\"_blank\" class=\"content-link\">Wunderlist</a> und <a href=\"https://www.microsoft.com/de-de/microsoft-365/microsoft-to-do-list-app\" target=\"_blank\" class=\"content-link\">Microsoft To Do</a> habe ich zentrale technische Aufgaben übernommen. Bei <a href=\"https://www.quentic.de/\" target=\"_blank\" class=\"content-link\">Quentic</a> habe ich die Platform mit cloud-native Architekturen modernisiert, hatte Verantwortung für Architekturentscheidungen und habe Entwicklungsteams gecoacht. Es ist mir wichtig, qualitativ hochwertige Lösungen zu liefern und mein Wissen zu teilen.",      
       p3: "In meiner Freizeit bin ich aktives Mitglied einer Rennrad-Gruppe und nehme sporadisch an einem Freizeit-Basketballverein teil. Auf Wochenendtouren erkunde ich Seen, ruhige Feldwege und Nebenstraßen — dabei entstehen neue Eindrücke, gute Gespräche und wertvoller Austausch mit Gleichgesinnten."
     },
     experience: {
@@ -172,7 +172,7 @@ const translations = {
         "Open-Source Contributions",
         "Domain Driven Design",
         "Container Orchestrierung mit Kubernetes",
-        "KI gestützte Anwendungen"
+        "Agentic/KI gestützte Anwendungen"
       ]
     },
     certificates: {
